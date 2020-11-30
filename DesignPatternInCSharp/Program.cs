@@ -17,6 +17,7 @@ namespace DesignPatternInCSharp
             Console.WriteLine(access.Balance);
             access.Balance = 50;
             Console.WriteLine(access.Balance);
+
         }
     }
 }
