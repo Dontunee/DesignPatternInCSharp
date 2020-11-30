@@ -4,6 +4,10 @@ using System.Text;
 
 namespace DesignPatternInCSharp.Encapsulation
 {
+    /// <summary>
+    /// Encapsulation is basically about hidding details of data from the public and introducing methods in order to access your data so as to protect the data as well provide availability of validation.
+    /// It also makes enhancements easier
+    /// </summary>
     public class Bank
     {
         //hiding class data by declaring the variable as private

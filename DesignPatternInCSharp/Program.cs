@@ -1,4 +1,5 @@
-﻿using DesignPatternInCSharp.Encapsulation;
+﻿using DesignPatternInCSharp.Abstraction;
+using DesignPatternInCSharp.Encapsulation;
 using System;
 
 namespace DesignPatternInCSharp
@@ -17,6 +18,17 @@ namespace DesignPatternInCSharp
             Console.WriteLine(access.Balance);
             access.Balance = 50;
             Console.WriteLine(access.Balance);
+
+
+            //Test to show Abstraction
+            Car carObject = new Car();
+            carObject.CarName = "toyota";
+            carObject.CarColour = "icewine";
+
+            carObject.Brakes();
+            carObject.Gear();
+            carObject.Steering();
+
 
         }
     }
