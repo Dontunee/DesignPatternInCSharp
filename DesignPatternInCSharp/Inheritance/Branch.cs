@@ -11,10 +11,10 @@ namespace DesignPatternInCSharp.Inheritance
     /// </summary>
     class Branch
     {
-        private int branchCode;
-        private string branchName, branchAddress;
+         int branchCode;
+         string branchName, branchAddress;
 
-        public void GetBranchData()
+        protected void GetBranchData()
         {
             Console.WriteLine("Enter branch details:");
             Console.WriteLine("Enter branch code");
@@ -25,7 +25,7 @@ namespace DesignPatternInCSharp.Inheritance
             branchAddress = Console.ReadLine();
         }
 
-        public void DisplayBranchData()
+        protected void DisplayBranchData()
         {
             Console.WriteLine("Branch code is:" + branchCode);
             Console.WriteLine("Branch name is:" +  branchName);
@@ -35,8 +35,8 @@ namespace DesignPatternInCSharp.Inheritance
 
     class Employee : Branch
     {
-        private int employeeId, employeeAge;
-        private string employeeName, employeeAddress;
+         int employeeId, employeeAge;
+         string employeeName, employeeAddress;
 
         public void GetEmployeeData()
         {

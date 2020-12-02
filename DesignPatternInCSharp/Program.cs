@@ -1,6 +1,7 @@
 ﻿using DesignPatternInCSharp.Abstraction;
 using DesignPatternInCSharp.Encapsulation;
 using DesignPatternInCSharp.Inheritance;
+using DesignPatternInCSharp.Interface;
 using System;
 
 namespace DesignPatternInCSharp
@@ -39,6 +40,13 @@ namespace DesignPatternInCSharp
             //employee.DisplayEmployeeData();
             //Console.WriteLine("Press any key to exit");
             //Console.ReadKey();
+
+            //Test to show interface implementation
+            var circle = new Circle();
+            circle.Area(3, 5);
+
+
+
 
         }
     }
