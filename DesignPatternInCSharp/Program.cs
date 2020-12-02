@@ -1,8 +1,10 @@
-﻿using DesignPatternInCSharp.Abstraction;
+﻿using DesignPatternInCSharp.AbstractClassAndMethod;
+using DesignPatternInCSharp.Abstraction;
 using DesignPatternInCSharp.Encapsulation;
 using DesignPatternInCSharp.Inheritance;
 using DesignPatternInCSharp.Interface;
 using System;
+using static DesignPatternInCSharp.AbstractClassAndMethod.Plan;
 
 namespace DesignPatternInCSharp
 {
@@ -41,9 +43,28 @@ namespace DesignPatternInCSharp
             //Console.WriteLine("Press any key to exit");
             //Console.ReadKey();
 
-            //Test to show interface implementation
-            var circle = new Circle();
-            circle.Area(3, 5);
+            ////Test to show interface implementation
+            //var circle = new Circle();
+            //circle.Area(3, 5);
+
+            //Test to show abstract class 
+            //Sub1 object1 = new Sub1();
+            //object1.Calculate(25);
+            //Plan p;
+            //Console.WriteLine("Commercial connection");
+            //p = new CommercialPlan();
+            //p.getRate();
+            //p.Calculation(250);
+            //Console.WriteLine("Domestic connection");
+            //p = new DomesticPlan();
+            //p.getRate();
+            //p.Calculation(150);
+            //Console.ReadKey();
+            //ClassManager manager = new ClassManager();
+            //manager.GetEmployeeData();
+            //manager.DisplayEmployeeData();
+            //Console.ReadKey();
+
 
 
 
