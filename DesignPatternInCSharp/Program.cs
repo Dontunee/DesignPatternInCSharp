@@ -2,6 +2,7 @@
 using DesignPatternInCSharp.Abstraction;
 using DesignPatternInCSharp.Encapsulation;
 using DesignPatternInCSharp.FactoryDesignPattern;
+using DesignPatternInCSharp.FactoryMethodDesignPattern;
 using DesignPatternInCSharp.Inheritance;
 using DesignPatternInCSharp.Interface;
 using System;
@@ -67,19 +68,26 @@ namespace DesignPatternInCSharp
             //Console.ReadKey();
 
             //Test For Factory design pattern 
-            var creditDetails = CreditCardFactory.GetCreditCard("Basic");
-            if (creditDetails != null)
-            {
-                Console.WriteLine("CardType :" + creditDetails.GetCardType());
-                Console.WriteLine("CreditLimit :" + creditDetails.GetCreditLimit());
-                Console.WriteLine("AnnualCharge :" + creditDetails.GetAnnualCharge());
-            }
-            else
-            {
-                Console.WriteLine("Invalid credit card type");
-            }
+            //var creditDetails = CreditCardFactory.GetCreditCard("Basic");
+            //if (creditDetails != null)
+            //{
+            //    Console.WriteLine("CardType :" + creditDetails.GetCardType());
+            //    Console.WriteLine("CreditLimit :" + creditDetails.GetCreditLimit());
+            //    Console.WriteLine("AnnualCharge :" + creditDetails.GetAnnualCharge());
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid credit card type");
+            //}
 
-            Console.ReadLine();
+            //Console.ReadLine();
+
+            //Test to show Factory Method Design Pattern
+            //var card = new BasicCreditCardFactory().MakeProduct();
+            //card.GetCardType();
+            //card.GetCreditLimit();
+            //card.GetAnnualCharge();
+
 
 
 
