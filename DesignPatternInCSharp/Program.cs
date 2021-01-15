@@ -6,6 +6,7 @@ using DesignPatternInCSharp.FactoryMethodDesignPattern;
 using DesignPatternInCSharp.Inheritance;
 using DesignPatternInCSharp.Interface;
 using System;
+using System.Collections.Generic;
 using static DesignPatternInCSharp.AbstractClassAndMethod.Plan;
 
 namespace DesignPatternInCSharp
@@ -14,6 +15,41 @@ namespace DesignPatternInCSharp
     {
         static void Main(string[] args)
         {
+            var numberOfEntries = Console.ReadLine();
+            var namePhoneNumberDictionary = new Dictionary<string, string>();
+            for (int i = 1; i <= int.Parse(numberOfEntries); i++)
+            {
+                var input = Console.ReadLine();
+                var inputSplit = input.Split(' ');
+                namePhoneNumberDictionary.Add(inputSplit[0], inputSplit[1]);
+            }
+
+            string getInput = null;
+
+            bool flag = false;
+            do
+            {
+                getInput = Console.ReadLine();
+                if (getInput != null)
+                {
+                    namePhoneNumberDictionary.TryGetValue(getInput, out string phoneNumber);
+                    if (phoneNumber != null)
+                    {
+                        var output = getInput + "=" + phoneNumber;
+                        Console.WriteLine(output);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Not found");
+                    }
+                }
+                else
+                {
+                    flag = true;
+                }
+            }
+            while (!flag);
+
             //Test To show encapsulation
             //Bank access = new Bank();
             //access.setBalance(500);

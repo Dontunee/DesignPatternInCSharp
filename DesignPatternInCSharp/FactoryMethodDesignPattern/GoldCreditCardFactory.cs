@@ -9,7 +9,7 @@ namespace DesignPatternInCSharp.FactoryMethodDesignPattern
     {
         protected override CreditCard MakeCredit()
         {
-            return  new Gold()
+            return new Gold();
         }
     }
 }
